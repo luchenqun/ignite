@@ -87,7 +87,7 @@ func NewGenerator(replacer placeholder.Replacer, opts *Options) (*genny.Generato
 //   - A service named "Msg" to exist in the proto file, it appends the RPCs inside it.
 func protoTxRPCModify(opts *Options) genny.RunFn {
 	return func(r *genny.Runner) error {
-		path := filepath.Join(opts.AppPath, "proto", opts.AppName, opts.ModuleName, "tx.proto")
+		path := filepath.Join(opts.AppPath, "proto", opts.AppName, opts.ModuleName, "v1", "tx.proto")
 		f, err := r.Disk.Find(path)
 		if err != nil {
 			return err
@@ -111,7 +111,7 @@ func protoTxRPCModify(opts *Options) genny.RunFn {
 
 func protoTxMessageModify(opts *Options) genny.RunFn {
 	return func(r *genny.Runner) error {
-		path := filepath.Join(opts.AppPath, "proto", opts.AppName, opts.ModuleName, "tx.proto")
+		path := filepath.Join(opts.AppPath, "proto", opts.AppName, opts.ModuleName, "v1", "tx.proto")
 		f, err := r.Disk.Find(path)
 		if err != nil {
 			return err

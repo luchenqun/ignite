@@ -50,7 +50,7 @@ func Parse(rawpath string) (Path, error) {
 	p := Path{
 		RawPath: rawpath,
 		Root:    rootName,
-		Package: packageName,
+		Package: "quarix",
 	}
 
 	return p, nil

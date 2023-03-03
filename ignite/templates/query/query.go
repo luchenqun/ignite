@@ -66,7 +66,7 @@ func NewGenerator(replacer placeholder.Replacer, opts *Options) (*genny.Generato
 //   - Existence of a service with name "Query" since that is where the RPCs will be added.
 func protoQueryModify(opts *Options) genny.RunFn {
 	return func(r *genny.Runner) error {
-		path := filepath.Join(opts.AppPath, "proto", opts.AppName, opts.ModuleName, "query.proto")
+		path := filepath.Join(opts.AppPath, "proto", opts.AppName, opts.ModuleName, "v1", "query.proto")
 		f, err := r.Disk.Find(path)
 		if err != nil {
 			return err
