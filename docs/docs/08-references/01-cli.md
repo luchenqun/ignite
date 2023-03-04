@@ -3046,6 +3046,7 @@ Transactions subcommands
       --address-prefix string    account address prefix (default "cosmos")
       --fees string              fees to pay along with transaction; eg: 10uatom
       --gas string               gas limit to set per-transaction; set to "auto" to calculate sufficient gas automatically (default "auto")
+      --gas-adjustment float     gas adjustment to set per-transaction
       --gas-prices string        gas prices in decimal format to determine the transaction fee (e.g. 0.1uatom)
       --generate-only            build an unsigned transaction and write it to STDOUT
   -h, --help                     help for tx
@@ -3082,6 +3083,7 @@ Bank transaction subcommands
       --address-prefix string    account address prefix (default "cosmos")
       --fees string              fees to pay along with transaction; eg: 10uatom
       --gas string               gas limit to set per-transaction; set to "auto" to calculate sufficient gas automatically (default "auto")
+      --gas-adjustment float     gas adjustment to set per-transaction
       --gas-prices string        gas prices in decimal format to determine the transaction fee (e.g. 0.1uatom)
       --generate-only            build an unsigned transaction and write it to STDOUT
       --home string              directory where the blockchain node is initialized
@@ -3116,6 +3118,7 @@ ignite node tx bank send [from_account_or_address] [to_account_or_address] [amou
       --address-prefix string    account address prefix (default "cosmos")
       --fees string              fees to pay along with transaction; eg: 10uatom
       --gas string               gas limit to set per-transaction; set to "auto" to calculate sufficient gas automatically (default "auto")
+      --gas-adjustment float     gas adjustment to set per-transaction
       --gas-prices string        gas prices in decimal format to determine the transaction fee (e.g. 0.1uatom)
       --generate-only            build an unsigned transaction and write it to STDOUT
       --home string              directory where the blockchain node is initialized
